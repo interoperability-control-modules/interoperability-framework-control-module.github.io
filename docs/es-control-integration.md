@@ -1,6 +1,6 @@
 # ES Control Integration
 
-[Control Evaluation Engine](https://github.com/der-control-modules/ctrl-eval-engine){ .md-button }
+[Control Evaluation Engine](https://github.com/interoperability-control-modules/ctrl-eval-engine){ .md-button }
 [ES-Control Web Tool](https://es-control.pnnl.gov/){ .md-button }
 
 [ES-Control](https://es-control.pnnl.gov/) is PNNL's web-based energy storage simulation tool. Users select
@@ -72,6 +72,6 @@ from julia import CtrlEvalEngine
 ```
 
 Full step-by-step instructions, including verification that PyCall found the dynamic `libpython`, are in the
-[ctrl-eval-engine README](https://github.com/der-control-modules/ctrl-eval-engine#installation). If integration with
+[ctrl-eval-engine README](https://github.com/interoperability-control-modules/ctrl-eval-engine#installation). If integration with
 the Real-Time Control Agent is not required, the engine can also be run standalone in Docker using the Dockerfiles in
 the repository.

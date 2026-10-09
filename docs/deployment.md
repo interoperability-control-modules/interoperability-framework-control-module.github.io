@@ -29,10 +29,10 @@ the applications resolve their device topics through the Interoperability Servic
 
 ```shell
 sudo apt-get install -y python3.10 python3.10-venv git
-python3.10 -m venv ~/der-control
-source ~/der-control/bin/activate
+python3.10 -m venv ~/interoperability-framework
+source ~/interoperability-framework/bin/activate
 pip install --upgrade pip
-export VOLTTRON_HOME=~/.der-control
+export VOLTTRON_HOME=~/.interoperability-framework
 mkdir -p $VOLTTRON_HOME/configs
 ```
 
@@ -41,7 +41,7 @@ Add the `VOLTTRON_HOME` export to the shell profile so that every component find
 ## 2. Install the runtime and start the server
 
 ```shell
-pip install git+https://github.com/der-control-modules/der-control-fastlib
+pip install git+https://github.com/interoperability-control-modules/der-control-fastlib
 export JWT_SECRET_KEY=$(python -c "import secrets; print(secrets.token_urlsafe(32))")
 aems-server --host 127.0.0.1 --port 8000
 ```
@@ -61,9 +61,9 @@ curl http://127.0.0.1:8000/health
 Install the framework packages into the same virtual environment:
 
 ```shell
-pip install git+https://github.com/der-control-modules/interoperability-service
-pip install git+https://github.com/der-control-modules/lib-protocol-proxy-mqtt   # and/or lib-protocol-proxy-nats
-pip install git+https://github.com/der-control-modules/message-bus-adapter
+pip install git+https://github.com/interoperability-control-modules/interoperability-service
+pip install git+https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt   # and/or lib-protocol-proxy-nats
+pip install git+https://github.com/interoperability-control-modules/message-bus-adapter
 ```
 
 ### Interoperability Service
@@ -112,10 +112,10 @@ that applications can address them by identifier rather than by protocol.
 Install the application packages:
 
 ```shell
-pip install git+https://github.com/der-control-modules/grid-signals
-pip install git+https://github.com/der-control-modules/load-forecaster
-pip install git+https://github.com/der-control-modules/scheduler
-pip install git+https://github.com/der-control-modules/realtime-control-agent
+pip install git+https://github.com/interoperability-control-modules/grid-signals
+pip install git+https://github.com/interoperability-control-modules/load-forecaster
+pip install git+https://github.com/interoperability-control-modules/scheduler
+pip install git+https://github.com/interoperability-control-modules/realtime-control-agent
 ```
 
 Write one configuration file per application in `$VOLTTRON_HOME/configs/`, using the examples on the
@@ -164,7 +164,7 @@ port 8000 of the container on host port 5410, and joins an external bridge netwo
 containers attach to. The `make` targets validate the publish address and the free port before starting anything:
 
 ```shell
-git clone https://github.com/der-control-modules/der-control-fastlib
+git clone https://github.com/interoperability-control-modules/der-control-fastlib
 cd der-control-fastlib
 make stack-up C=server                        # build and start the server, wait for /health
 make stack-status
@@ -204,8 +204,8 @@ After=network.target
 
 [Service]
 User=volttron
-Environment=VOLTTRON_HOME=/home/volttron/.der-control
-ExecStart=/home/volttron/der-control/bin/aems-server --host 127.0.0.1 --port 8000
+Environment=VOLTTRON_HOME=/home/volttron/.interoperability-framework
+ExecStart=/home/volttron/interoperability-framework/bin/aems-server --host 127.0.0.1 --port 8000
 Restart=on-failure
 
 [Install]
@@ -215,7 +215,7 @@ WantedBy=multi-user.target
 and a template for the components, one instance per identity:
 
 ```ini
-# /etc/systemd/system/der-control@.service
+# /etc/systemd/system/interoperability-framework@.service
 [Unit]
 Description=DER control component %i
 After=aems-server.service
@@ -223,10 +223,10 @@ Requires=aems-server.service
 
 [Service]
 User=volttron
-Environment=VOLTTRON_HOME=/home/volttron/.der-control
-EnvironmentFile=/home/volttron/.der-control/env/%i
-ExecStart=/home/volttron/der-control/bin/python -m ${MODULE} --identity %i --host 127.0.0.1 --port 8000 \
-    --config /home/volttron/.der-control/configs/%i.json
+Environment=VOLTTRON_HOME=/home/volttron/.interoperability-framework
+EnvironmentFile=/home/volttron/.interoperability-framework/env/%i
+ExecStart=/home/volttron/interoperability-framework/bin/python -m ${MODULE} --identity %i --host 127.0.0.1 --port 8000 \
+    --config /home/volttron/.interoperability-framework/configs/%i.json
 Restart=on-failure
 
 [Install]
@@ -238,9 +238,9 @@ in dependency order:
 
 ```shell
 sudo systemctl enable --now aems-server
-sudo systemctl enable --now der-control@platform.presentation der-control@platform.bus_adapter
-sudo systemctl enable --now der-control@grid.signals der-control@load.forecaster \
-                            der-control@agent.scheduler der-control@der.rtcontrol
+sudo systemctl enable --now interoperability-framework@platform.presentation interoperability-framework@platform.bus_adapter
+sudo systemctl enable --now interoperability-framework@grid.signals interoperability-framework@load.forecaster \
+                            interoperability-framework@agent.scheduler interoperability-framework@der.rtcontrol
 ```
 
 ## Updating a deployment
@@ -249,8 +249,8 @@ Upgrade a component by reinstalling its package and restarting its service; conf
 are preserved across restarts:
 
 ```shell
-pip install --upgrade git+https://github.com/der-control-modules/realtime-control-agent
-sudo systemctl restart der-control@der.rtcontrol
+pip install --upgrade git+https://github.com/interoperability-control-modules/realtime-control-agent
+sudo systemctl restart interoperability-framework@der.rtcontrol
 ```
 
 Configuration changes never require a restart: store the new configuration with a `PUT` to the configuration store

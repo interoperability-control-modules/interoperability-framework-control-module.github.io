@@ -1,6 +1,6 @@
 # MQTT Protocol Proxy
 
-[Code & Installation Instructions](https://github.com/der-control-modules/lib-protocol-proxy-mqtt){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt){ .md-button }
 
 The MQTT Protocol Proxy connects the [Message Bus Adapter](message-bus-adapter.md) to an MQTT broker. MQTT (Message
 Queuing Telemetry Transport) is one of the transports commonly used by OpenFMB deployments, so this proxy is the usual
@@ -49,7 +49,7 @@ The same options are accepted on the command line (`--host`, `--port`, `--keepal
 ## Installation
 
 ```shell
-pip install git+https://github.com/der-control-modules/lib-protocol-proxy-mqtt
+pip install git+https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt
 ```
 
 Install the package into the same virtual environment as the [Message Bus Adapter](message-bus-adapter.md). The

@@ -1,6 +1,6 @@
 # Scheduler Agent
 
-[Code & Installation Instructions](https://github.com/der-control-modules/scheduler){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/scheduler){ .md-button }
 
 The scheduler agent plays a vital role within the VOLTTRON agents' framework, facilitating efficient energy management
 and ensuring seamless integration with other service agents. The agent is primarily responsible for scheduling energy
@@ -111,7 +111,7 @@ record of the computed schedule for historians and other subscribers, such as th
 Before installing, VOLTTRON should be installed and running with its virtual environment active.
 
 ```shell
-git clone https://github.com/der-control-modules/scheduler
+git clone https://github.com/interoperability-control-modules/scheduler
 vctl install ./scheduler --vip-identity agent.scheduler --tag scheduler --start
 vctl config store agent.scheduler config path/to/config.json
 ```

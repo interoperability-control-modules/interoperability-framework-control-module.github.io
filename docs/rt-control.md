@@ -1,6 +1,6 @@
 # Real-Time Control Agent
 
-[Code & Installation Instructions](https://github.com/der-control-modules/realtime-control-agent){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/realtime-control-agent){ .md-button }
 
 The Real-Time (RT) Control Agent provides a framework for actuating one or more control algorithms
 on an energy storage system. The RTControl framework involves the use of three abstract class types:
@@ -132,7 +132,7 @@ control modes also import on hosts without a VOLTTRON distribution, such as the
 [der-control-fastlib runtime](der-control-fastlib.md), where the compatibility layer supplies the platform imports.
 
 ```shell
-git clone https://github.com/der-control-modules/realtime-control-agent
+git clone https://github.com/interoperability-control-modules/realtime-control-agent
 vctl install ./realtime-control-agent --vip-identity der.rtcontrol --tag rtcontrol --start
 vctl config store der.rtcontrol config path/to/config.json
 ```

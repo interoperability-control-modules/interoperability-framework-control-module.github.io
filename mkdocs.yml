@@ -1,4 +1,5 @@
-site_name: DER Control Modules Site
+site_name: Interoperability Framework Control Module Site
+site_url: https://interoperability-control-modules.github.io/interoperability-framework-control-module.github.io/
 theme:
   features:
     - navigation.instant

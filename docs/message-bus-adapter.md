@@ -1,6 +1,6 @@
 # Message Bus Adapters
 
-[Code & Installation Instructions](https://github.com/der-control-modules/message-bus-adapter){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/message-bus-adapter){ .md-button }
 
 The Message Bus Adapter is a VOLTTRON agent that relays data between the internal framework message bus and a
 foreign message bus, such as an OpenFMB bus running on [MQTT](mqtt.md) or [NATS](nats.md). It is the component that
@@ -14,8 +14,8 @@ currently available:
 
 | Bus  | Protocol proxy                                                                          | Client library |
 |------|-----------------------------------------------------------------------------------------|----------------|
-| MQTT | [lib-protocol-proxy-mqtt](https://github.com/der-control-modules/lib-protocol-proxy-mqtt) | paho-mqtt      |
-| NATS | [lib-protocol-proxy-nats](https://github.com/der-control-modules/lib-protocol-proxy-nats) | nats-py        |
+| MQTT | [lib-protocol-proxy-mqtt](https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt) | paho-mqtt      |
+| NATS | [lib-protocol-proxy-nats](https://github.com/interoperability-control-modules/lib-protocol-proxy-nats) | nats-py        |
 
 ## How it works
 
@@ -95,8 +95,8 @@ Before installing, VOLTTRON should be installed and running and its virtual envi
 Install the protocol proxy for the bus you intend to use, then install the adapter:
 
 ```shell
-pip install git+https://github.com/der-control-modules/lib-protocol-proxy-mqtt   # or lib-protocol-proxy-nats
-git clone https://github.com/der-control-modules/message-bus-adapter
+pip install git+https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt   # or lib-protocol-proxy-nats
+git clone https://github.com/interoperability-control-modules/message-bus-adapter
 vctl install ./message-bus-adapter --vip-identity platform.bus_adapter --tag bus_adapter --start
 vctl config store platform.bus_adapter config path/to/config.json
 ```

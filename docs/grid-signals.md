@@ -1,6 +1,6 @@
 # Grid Signals
 
-[Code & Installation Instructions](https://github.com/der-control-modules/grid-signals){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/grid-signals){ .md-button }
 
 The Grid Signals agent (also referred to as the Grid Information agent) generates and publishes **grid service
 signals** that the [Scheduler](scheduler.md) and [Real-Time Control Agent](rt-control.md) use to decide how to
@@ -102,6 +102,6 @@ and whether a token is set.
 Before installing, VOLTTRON should be installed and running with its virtual environment active.
 
 ```shell
-git clone https://github.com/der-control-modules/grid-signals
+git clone https://github.com/interoperability-control-modules/grid-signals
 vctl install ./grid-signals --tag grid-signals --start
 ```

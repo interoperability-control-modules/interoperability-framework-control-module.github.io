@@ -1,9 +1,9 @@
 # der-control-fastlib Runtime
 
-[Code & Installation Instructions](https://github.com/der-control-modules/der-control-fastlib){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/der-control-fastlib){ .md-button }
 
 der-control-fastlib is the lightweight runtime on which the Interoperability Framework and the DER control
-applications are deployed. It is the DER Control Modules distribution of the Agent Energy Management System (AEMS)
+applications are deployed. It is the Interoperability Framework Control Module distribution of the Agent Energy Management System (AEMS)
 library, a fork of [aems-lib-fastapi](https://github.com/VOLTTRON/aems-lib-fastapi) from the VOLTTRON team. It
 replaces the full VOLTTRON platform with two small pieces:
 
@@ -28,16 +28,16 @@ code can be deployed on either runtime. A compatibility layer also serves legacy
 Requirements: Python 3.10 or higher and pip.
 
 ```shell
-python -m venv ~/der-control
-source ~/der-control/bin/activate
-pip install git+https://github.com/der-control-modules/der-control-fastlib
+python -m venv ~/interoperability-framework
+source ~/interoperability-framework/bin/activate
+pip install git+https://github.com/interoperability-control-modules/der-control-fastlib
 ```
 
 For development, clone the repository and use the `make` targets (`make dev-install`, `make test`, `make lint`,
 `make format`, `make check`, `make security`, `make build`):
 
 ```shell
-git clone https://github.com/der-control-modules/der-control-fastlib
+git clone https://github.com/interoperability-control-modules/der-control-fastlib
 cd der-control-fastlib
 make dev-install
 ```
@@ -45,7 +45,7 @@ make dev-install
 ## Starting the server
 
 ```shell
-export VOLTTRON_HOME=~/.der-control
+export VOLTTRON_HOME=~/.interoperability-framework
 export JWT_SECRET_KEY=$(python -c "import secrets; print(secrets.token_urlsafe(32))")
 aems-server --host 127.0.0.1 --port 8000
 ```

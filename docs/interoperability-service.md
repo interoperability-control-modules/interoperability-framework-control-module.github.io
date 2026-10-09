@@ -1,6 +1,6 @@
 # Interoperability Service
 
-[Code & Installation Instructions](https://github.com/der-control-modules/interoperability-service){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/interoperability-service){ .md-button }
 
 The Interoperability Service lets control applications address Distributed Energy Resource (DER) data by a stable,
 protocol-neutral identifier and receive it in whatever data format they understand. It provides templates for
@@ -308,7 +308,7 @@ driver with the discovered values as starting values, the device configurations 
 and a `vctl` script that stores them. It requires the optional `discovery` extra, which installs pysunspec2.
 
 ```shell
-pip install "interoperability-service[discovery] @ git+https://github.com/der-control-modules/interoperability-service"
+pip install "interoperability-service[discovery] @ git+https://github.com/interoperability-control-modules/interoperability-service"
 python -m interoperability.discovery.sunspec --host 10.0.0.21 --unit 1 --scaling driver --out build/
 python -m interoperability.discovery.sunspec --file device.json --out build/   # offline
 ```
@@ -497,7 +497,7 @@ Information on how to install the VOLTTRON platform can be found
 [here](https://github.com/eclipse-volttron/volttron-core).
 
 ```shell
-git clone https://github.com/der-control-modules/interoperability-service
+git clone https://github.com/interoperability-control-modules/interoperability-service
 vctl install ./interoperability-service --vip-identity platform.presentation --tag interop --start
 vctl config store platform.presentation config path/to/config.json
 vctl status

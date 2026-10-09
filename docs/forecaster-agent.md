@@ -1,6 +1,6 @@
 # Forecaster Agent
 
-[Code & Installation Instructions](https://github.com/der-control-modules/load-forecaster){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/load-forecaster){ .md-button }
 
 The Forecaster Agent (Load Forecaster) is a VOLTTRON agent that produces short-term forecasts of building electrical
 and cooling load for use by the [Scheduler](scheduler.md) and other DER control applications. It utilizes historical
@@ -76,6 +76,6 @@ The Scheduler subscribes to this topic through its `load_forecast_topic` and `lo
 Before installing, VOLTTRON should be installed and running with its virtual environment active.
 
 ```shell
-git clone https://github.com/der-control-modules/load-forecaster
+git clone https://github.com/interoperability-control-modules/load-forecaster
 vctl install ./load-forecaster --tag load-forecaster --start
 ```

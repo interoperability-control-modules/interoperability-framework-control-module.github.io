@@ -1,6 +1,6 @@
-# Building https://der-control-modules.github.io
+# Building https://interoperability-control-modules.github.io/interoperability-framework-control-module.github.io
 
-This repository contains documentation using MkDocs for [der-control-modules.github.io](https://der-control-modules.github.io). Follow these steps to set up and build the MkDocs documentation locally.
+This repository contains documentation using MkDocs for [interoperability-framework-control-module.github.io](https://interoperability-control-modules.github.io/interoperability-framework-control-module.github.io). Follow these steps to set up and build the MkDocs documentation locally.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ This repository contains documentation using MkDocs for [der-control-modules.git
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/der-control-modules/der-control-modules.github.io
+git clone https://github.com/interoperability-control-modules/interoperability-framework-control-module.github.io
 cd your-repo
 ```
 
@@ -60,4 +60,4 @@ The documentation pages live in the `docs` directory and are organized by `mkdoc
 | `docs/test-cases.md`                    | Test cases, experimentation results, and the ongoing industry test setup.                |
 
 Figures are stored in `docs/images`. The source presentation and figures used on the site are maintained in the
-`presentation` folder of the `der-control` workspace.
+`presentation` folder of the `interoperability-framework` workspace.

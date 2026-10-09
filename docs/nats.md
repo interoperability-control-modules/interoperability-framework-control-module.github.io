@@ -1,6 +1,6 @@
 # NATS Protocol Proxy
 
-[Code & Installation Instructions](https://github.com/der-control-modules/lib-protocol-proxy-nats){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/lib-protocol-proxy-nats){ .md-button }
 
 The NATS Protocol Proxy connects the [Message Bus Adapter](message-bus-adapter.md) to a NATS server. NATS is a
 lightweight, high-performance publish/subscribe messaging system used as a transport in OpenFMB deployments; see
@@ -45,7 +45,7 @@ the client. The `--servers` option is accepted on the command line when the prox
 ## Installation
 
 ```shell
-pip install git+https://github.com/der-control-modules/lib-protocol-proxy-nats
+pip install git+https://github.com/interoperability-control-modules/lib-protocol-proxy-nats
 ```
 
 Install the package into the same virtual environment as the [Message Bus Adapter](message-bus-adapter.md). The

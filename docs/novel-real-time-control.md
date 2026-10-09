@@ -1,6 +1,6 @@
 # Novel Real-Time Control
 
-[Code & Installation Instructions](https://github.com/der-control-modules/realtime-control-agent){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/realtime-control-agent){ .md-button }
 
 In addition to the standards-defined [MESA Modes](mesa-modes.md), the [Real-Time Control Agent](rt-control.md)
 provides a family of PNNL-developed control functions. These are implemented in the Julia
@@ -65,4 +65,4 @@ Novel modes are configured as entries of the `modes` list, like any other mode. 
 
 * A dynamically linked Python environment (required by PyJulia), Julia, and the Control Evaluation Engine app
   directory. Installation steps are given on the [ES Control Integration](es-control-integration.md) page and in the
-  [ctrl-eval-engine](https://github.com/der-control-modules/ctrl-eval-engine) repository.
+  [ctrl-eval-engine](https://github.com/interoperability-control-modules/ctrl-eval-engine) repository.

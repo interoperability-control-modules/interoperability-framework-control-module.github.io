@@ -76,17 +76,17 @@ Each component is additionally described on its own page, as follows:
 
 | Component | Code |
 |---|---|
-| [Interoperability Service](interoperability-service.md) | [interoperability-service](https://github.com/der-control-modules/interoperability-service) |
-| [Message Bus Adapters](message-bus-adapter.md) | [message-bus-adapter](https://github.com/der-control-modules/message-bus-adapter) |
-| [MQTT Protocol Proxy](mqtt.md) | [lib-protocol-proxy-mqtt](https://github.com/der-control-modules/lib-protocol-proxy-mqtt) |
-| [NATS Protocol Proxy](nats.md) | [lib-protocol-proxy-nats](https://github.com/der-control-modules/lib-protocol-proxy-nats) |
-| [OpenFMB Integration](openfmb.md) | [openfmb_der](https://github.com/der-control-modules/openfmb_der) |
-| [Real-Time Control Agent](rt-control.md) ([MESA Modes](mesa-modes.md), [Novel Real-Time Control](novel-real-time-control.md)) | [realtime-control-agent](https://github.com/der-control-modules/realtime-control-agent) |
-| [Scheduler](scheduler.md) | [scheduler](https://github.com/der-control-modules/scheduler) |
-| [ES Control Integration](es-control-integration.md) | [ctrl-eval-engine](https://github.com/der-control-modules/ctrl-eval-engine) |
-| [Grid Signals](grid-signals.md) | [grid-signals](https://github.com/der-control-modules/grid-signals) |
-| [Forecaster Agent](forecaster-agent.md) | [load-forecaster](https://github.com/der-control-modules/load-forecaster) |
-| [der-control-fastlib Runtime](der-control-fastlib.md) | [der-control-fastlib](https://github.com/der-control-modules/der-control-fastlib) |
+| [Interoperability Service](interoperability-service.md) | [interoperability-service](https://github.com/interoperability-control-modules/interoperability-service) |
+| [Message Bus Adapters](message-bus-adapter.md) | [message-bus-adapter](https://github.com/interoperability-control-modules/message-bus-adapter) |
+| [MQTT Protocol Proxy](mqtt.md) | [lib-protocol-proxy-mqtt](https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt) |
+| [NATS Protocol Proxy](nats.md) | [lib-protocol-proxy-nats](https://github.com/interoperability-control-modules/lib-protocol-proxy-nats) |
+| [OpenFMB Integration](openfmb.md) | [openfmb_der](https://github.com/interoperability-control-modules/openfmb_der) |
+| [Real-Time Control Agent](rt-control.md) ([MESA Modes](mesa-modes.md), [Novel Real-Time Control](novel-real-time-control.md)) | [realtime-control-agent](https://github.com/interoperability-control-modules/realtime-control-agent) |
+| [Scheduler](scheduler.md) | [scheduler](https://github.com/interoperability-control-modules/scheduler) |
+| [ES Control Integration](es-control-integration.md) | [ctrl-eval-engine](https://github.com/interoperability-control-modules/ctrl-eval-engine) |
+| [Grid Signals](grid-signals.md) | [grid-signals](https://github.com/interoperability-control-modules/grid-signals) |
+| [Forecaster Agent](forecaster-agent.md) | [load-forecaster](https://github.com/interoperability-control-modules/load-forecaster) |
+| [der-control-fastlib Runtime](der-control-fastlib.md) | [der-control-fastlib](https://github.com/interoperability-control-modules/der-control-fastlib) |
 
 Links to code and installation instructions can also be found at the top of each component page.
 A step-by-step guide to deploying the framework and applications on the der-control-fastlib runtime is

@@ -1,6 +1,6 @@
 # MESA Modes
 
-[Code & Installation Instructions](https://github.com/der-control-modules/realtime-control-agent){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/realtime-control-agent){ .md-button }
 
 The MESA-ESS specification (Modular Energy Storage Architecture), built on IEEE 1815.2 (DNP3) and the
 IEC 61850-7-420 DER information model, defines a set of standard control modes for energy storage systems.

@@ -65,7 +65,7 @@ SEL RTAC, WAGO controller); Path 2 connects the framework directly to simulated 
 
 ## Simulated end devices
 
-[Code & Installation Instructions](https://github.com/der-control-modules/simulated-end-devices){ .md-button }
+[Code & Installation Instructions](https://github.com/interoperability-control-modules/simulated-end-devices){ .md-button }
 
 The `simulated-end-devices` package provides the Path 2 devices of [](#testing-setup): software models of DERs that
 expose the standard protocols the framework speaks, so that the Interoperability Service, drivers, and control
@@ -99,7 +99,7 @@ the [Interoperability Service](interoperability-service.md#bundled-transforms) a
 Install and run the site in real time, or accelerated:
 
 ```shell
-git clone https://github.com/der-control-modules/simulated-end-devices
+git clone https://github.com/interoperability-control-modules/simulated-end-devices
 cd simulated-end-devices
 python -m venv .venv && source .venv/bin/activate
 pip install .                                                # add ".[dnp3]" on Linux for a real DNP3 outstation

@@ -1,9 +1,9 @@
 # OpenFMB Integration
 
-[Message Bus Adapter](https://github.com/der-control-modules/message-bus-adapter){ .md-button }
-[MQTT Protocol Proxy](https://github.com/der-control-modules/lib-protocol-proxy-mqtt){ .md-button }
-[NATS Protocol Proxy](https://github.com/der-control-modules/lib-protocol-proxy-nats){ .md-button }
-[OpenFMB Test Tool](https://github.com/der-control-modules/openfmb_der){ .md-button }
+[Message Bus Adapter](https://github.com/interoperability-control-modules/message-bus-adapter){ .md-button }
+[MQTT Protocol Proxy](https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt){ .md-button }
+[NATS Protocol Proxy](https://github.com/interoperability-control-modules/lib-protocol-proxy-nats){ .md-button }
+[OpenFMB Test Tool](https://github.com/interoperability-control-modules/openfmb_der){ .md-button }
 
 Message Bus is a critical middleware component in the distributed systems architecture on various systems
 and environments. Open Field Message Bus (open FMB) is an extensive framework for robust communication between
@@ -89,7 +89,7 @@ OpenFMB bus, while device drivers provide direct access to SunSpec, MESA, and IE
 
 Code for the OpenFMB integration components:
 
-* [message-bus-adapter](https://github.com/der-control-modules/message-bus-adapter)
-* [lib-protocol-proxy-nats](https://github.com/der-control-modules/lib-protocol-proxy-nats)
-* [lib-protocol-proxy-mqtt](https://github.com/der-control-modules/lib-protocol-proxy-mqtt)
-* [openfmb_der](https://github.com/der-control-modules/openfmb_der) (OpenFMB test tool)
+* [message-bus-adapter](https://github.com/interoperability-control-modules/message-bus-adapter)
+* [lib-protocol-proxy-nats](https://github.com/interoperability-control-modules/lib-protocol-proxy-nats)
+* [lib-protocol-proxy-mqtt](https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt)
+* [openfmb_der](https://github.com/interoperability-control-modules/openfmb_der) (OpenFMB test tool)
