@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://interoperability-control-modules.github.io/interoperability-framework-control-module.github.io/message-bus-adapter/">
+      
       
         <link rel="prev" href="../interoperability-service/">
       
@@ -23,7 +25,7 @@
     
     
       
-        <title>Message Bus Adapters - DER Control Modules Site</title>
+        <title>Message Bus Adapters - Interoperability Framework Control Module Site</title>
       
     
     
@@ -80,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DER Control Modules Site" class="md-header__button md-logo" aria-label="DER Control Modules Site" data-md-component="logo">
+    <a href=".." title="Interoperability Framework Control Module Site" class="md-header__button md-logo" aria-label="Interoperability Framework Control Module Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -94,7 +96,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DER Control Modules Site
+            Interoperability Framework Control Module Site
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -138,13 +140,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DER Control Modules Site" class="md-nav__button md-logo" aria-label="DER Control Modules Site" data-md-component="logo">
+    <a href=".." title="Interoperability Framework Control Module Site" class="md-nav__button md-logo" aria-label="Interoperability Framework Control Module Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    DER Control Modules Site
+    Interoperability Framework Control Module Site
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -1043,7 +1045,7 @@
 
 
 <h1 id="message-bus-adapters">Message Bus Adapters</h1>
-<p><a class="md-button" href="https://github.com/der-control-modules/message-bus-adapter">Code &amp; Installation Instructions</a></p>
+<p><a class="md-button" href="https://github.com/interoperability-control-modules/message-bus-adapter">Code &amp; Installation Instructions</a></p>
 <p>The Message Bus Adapter is a VOLTTRON agent that relays data between the internal framework message bus and a
 foreign message bus, such as an OpenFMB bus running on <a href="../mqtt/">MQTT</a> or <a href="../nats/">NATS</a>. It is the component that
 allows the <a href="../interoperability-service/">Interoperability Service</a> and the control agents to exchange data with
@@ -1063,12 +1065,12 @@ currently available:</p>
 <tbody>
 <tr>
 <td>MQTT</td>
-<td><a href="https://github.com/der-control-modules/lib-protocol-proxy-mqtt">lib-protocol-proxy-mqtt</a></td>
+<td><a href="https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt">lib-protocol-proxy-mqtt</a></td>
 <td>paho-mqtt</td>
 </tr>
 <tr>
 <td>NATS</td>
-<td><a href="https://github.com/der-control-modules/lib-protocol-proxy-nats">lib-protocol-proxy-nats</a></td>
+<td><a href="https://github.com/interoperability-control-modules/lib-protocol-proxy-nats">lib-protocol-proxy-nats</a></td>
 <td>nats-py</td>
 </tr>
 </tbody>
@@ -1185,8 +1187,8 @@ warning until a <code>bus_type</code> is configured. Changing <code>bus_type</co
 <h2 id="installation">Installation</h2>
 <p>Before installing, VOLTTRON should be installed and running and its virtual environment should be active.
 Install the protocol proxy for the bus you intend to use, then install the adapter:</p>
-<pre><code class="language-shell">pip install git+https://github.com/der-control-modules/lib-protocol-proxy-mqtt   # or lib-protocol-proxy-nats
-git clone https://github.com/der-control-modules/message-bus-adapter
+<pre><code class="language-shell">pip install git+https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt   # or lib-protocol-proxy-nats
+git clone https://github.com/interoperability-control-modules/message-bus-adapter
 vctl install ./message-bus-adapter --vip-identity platform.bus_adapter --tag bus_adapter --start
 vctl config store platform.bus_adapter config path/to/config.json
 </code></pre>

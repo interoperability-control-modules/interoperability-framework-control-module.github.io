@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://interoperability-control-modules.github.io/interoperability-framework-control-module.github.io/test-cases/">
+      
       
         <link rel="prev" href="../deployment/">
       
@@ -21,7 +23,7 @@
     
     
       
-        <title>Test Cases - DER Control Modules Site</title>
+        <title>Test Cases - Interoperability Framework Control Module Site</title>
       
     
     
@@ -78,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DER Control Modules Site" class="md-header__button md-logo" aria-label="DER Control Modules Site" data-md-component="logo">
+    <a href=".." title="Interoperability Framework Control Module Site" class="md-header__button md-logo" aria-label="Interoperability Framework Control Module Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -92,7 +94,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DER Control Modules Site
+            Interoperability Framework Control Module Site
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -136,13 +138,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DER Control Modules Site" class="md-nav__button md-logo" aria-label="DER Control Modules Site" data-md-component="logo">
+    <a href=".." title="Interoperability Framework Control Module Site" class="md-nav__button md-logo" aria-label="Interoperability Framework Control Module Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    DER Control Modules Site
+    Interoperability Framework Control Module Site
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -952,7 +954,7 @@ OpenFMB/MESA, and vendor-specific protocols via drivers. The goals of this effor
 <p><figure id="industry-engagement"><img alt="" src="../images/industry-engagement.png"><figcaption>Figure 2: Path to a protocol-agnostic, interoperable DER ecosystem: vendor engagement, device integration, interoperability testing, and framework refinement. </figcaption></figure></p>
 <p><figure id="testing-setup"><img alt="" src="../images/testing-setup.png"><figcaption>Figure 3: Ongoing interoperability test setup at PNNL. Path 1 reaches end devices through vendor gateways (Eaton, SEL RTAC, WAGO controller); Path 2 connects the framework directly to simulated end devices. </figcaption></figure></p>
 <h2 id="simulated-end-devices">Simulated end devices</h2>
-<p><a class="md-button" href="https://github.com/der-control-modules/simulated-end-devices">Code &amp; Installation Instructions</a></p>
+<p><a class="md-button" href="https://github.com/interoperability-control-modules/simulated-end-devices">Code &amp; Installation Instructions</a></p>
 <p>The <code>simulated-end-devices</code> package provides the Path 2 devices of <a href="#testing-setup">Figure 3</a>: software models of DERs that
 expose the standard protocols the framework speaks, so that the Interoperability Service, drivers, and control
 applications can be exercised without hardware. One site configuration runs six devices behind a shared simulation
@@ -1021,7 +1023,7 @@ the <a href="../interoperability-service/#bundled-transforms">Interoperability S
   production IEEE 2030.5 deployment requires, and is therefore for testing only.</li>
 </ul>
 <p>Install and run the site in real time, or accelerated:</p>
-<pre><code class="language-shell">git clone https://github.com/der-control-modules/simulated-end-devices
+<pre><code class="language-shell">git clone https://github.com/interoperability-control-modules/simulated-end-devices
 cd simulated-end-devices
 python -m venv .venv &amp;&amp; source .venv/bin/activate
 pip install .                                                # add ".[dnp3]" on Linux for a real DNP3 outstation

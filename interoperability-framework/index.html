@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://interoperability-control-modules.github.io/interoperability-framework-control-module.github.io/interoperability-framework/">
+      
       
         <link rel="prev" href="..">
       
@@ -23,7 +25,7 @@
     
     
       
-        <title>Overview - DER Control Modules Site</title>
+        <title>Overview - Interoperability Framework Control Module Site</title>
       
     
     
@@ -80,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DER Control Modules Site" class="md-header__button md-logo" aria-label="DER Control Modules Site" data-md-component="logo">
+    <a href=".." title="Interoperability Framework Control Module Site" class="md-header__button md-logo" aria-label="Interoperability Framework Control Module Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -94,7 +96,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DER Control Modules Site
+            Interoperability Framework Control Module Site
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -138,13 +140,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DER Control Modules Site" class="md-nav__button md-logo" aria-label="DER Control Modules Site" data-md-component="logo">
+    <a href=".." title="Interoperability Framework Control Module Site" class="md-nav__button md-logo" aria-label="Interoperability Framework Control Module Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    DER Control Modules Site
+    Interoperability Framework Control Module Site
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -1029,35 +1031,35 @@ protocols.</p>
 <tbody>
 <tr>
 <td><a href="../interoperability-service/"><strong>Interoperability Service</strong></a></td>
-<td>Provides a standard, protocol-agnostic interface to DER devices. Maps protocol-specific data models (SunSpec Modbus, IEEE 1815.2, IEEE 2030.5, IEC 61850-7-420, OpenFMB) once through a common model, using graph-based transformation pipelines to perform multi-stage conversions rather than maintaining direct mappings between every protocol pair. Ships with transforms between IEC 61850-7-420, IEEE 1815.2 (MESA-DER), and SunSpec, and with OpenFMB data models. Decouples control applications from the underlying communication protocols. Code: <a href="https://github.com/der-control-modules/interoperability-service">interoperability-service</a>.</td>
+<td>Provides a standard, protocol-agnostic interface to DER devices. Maps protocol-specific data models (SunSpec Modbus, IEEE 1815.2, IEEE 2030.5, IEC 61850-7-420, OpenFMB) once through a common model, using graph-based transformation pipelines to perform multi-stage conversions rather than maintaining direct mappings between every protocol pair. Ships with transforms between IEC 61850-7-420, IEEE 1815.2 (MESA-DER), and SunSpec, and with OpenFMB data models. Decouples control applications from the underlying communication protocols. Code: <a href="https://github.com/interoperability-control-modules/interoperability-service">interoperability-service</a>.</td>
 </tr>
 <tr>
 <td><a href="../message-bus-adapter/"><strong>Message Bus Adapters</strong></a></td>
-<td>VOLTTRON agent that relays data between the internal framework message bus and external OpenFMB message buses. Bus connections are provided by protocol proxies for <a href="../mqtt/">MQTT</a> and <a href="../nats/">NATS</a>. Topic resolution and payload transformation are delegated to the Interoperability Service. Code: <a href="https://github.com/der-control-modules/message-bus-adapter">message-bus-adapter</a>, <a href="https://github.com/der-control-modules/lib-protocol-proxy-mqtt">lib-protocol-proxy-mqtt</a>, <a href="https://github.com/der-control-modules/lib-protocol-proxy-nats">lib-protocol-proxy-nats</a>.</td>
+<td>VOLTTRON agent that relays data between the internal framework message bus and external OpenFMB message buses. Bus connections are provided by protocol proxies for <a href="../mqtt/">MQTT</a> and <a href="../nats/">NATS</a>. Topic resolution and payload transformation are delegated to the Interoperability Service. Code: <a href="https://github.com/interoperability-control-modules/message-bus-adapter">message-bus-adapter</a>, <a href="https://github.com/interoperability-control-modules/lib-protocol-proxy-mqtt">lib-protocol-proxy-mqtt</a>, <a href="https://github.com/interoperability-control-modules/lib-protocol-proxy-nats">lib-protocol-proxy-nats</a>.</td>
 </tr>
 <tr>
 <td><a href="../openfmb/"><strong>OpenFMB Integration</strong></a></td>
-<td>Connects the framework to OpenFMB systems: message bus adapters on the OpenFMB bus, device drivers for direct device access, and identifier mapping and data-model transformations across supported protocols. Code: <a href="https://github.com/der-control-modules/openfmb_der">openfmb_der</a> (OpenFMB test tool).</td>
+<td>Connects the framework to OpenFMB systems: message bus adapters on the OpenFMB bus, device drivers for direct device access, and identifier mapping and data-model transformations across supported protocols. Code: <a href="https://github.com/interoperability-control-modules/openfmb_der">openfmb_der</a> (OpenFMB test tool).</td>
 </tr>
 <tr>
 <td><a href="../scheduler/"><strong>Scheduler Agent</strong></a></td>
-<td>Responsible for scheduling energy storage and grid operations using forecasted demand, generation, and pricing data. Integrates an optimization-based scheduler while remaining modular to support additional algorithmic approaches (including machine-learning-based scheduling), ensuring efficient energy storage and usage based on real-time grid needs and energy price variations. Code: <a href="https://github.com/der-control-modules/scheduler">scheduler</a>.</td>
+<td>Responsible for scheduling energy storage and grid operations using forecasted demand, generation, and pricing data. Integrates an optimization-based scheduler while remaining modular to support additional algorithmic approaches (including machine-learning-based scheduling), ensuring efficient energy storage and usage based on real-time grid needs and energy price variations. Code: <a href="https://github.com/interoperability-control-modules/scheduler">scheduler</a>.</td>
 </tr>
 <tr>
 <td><a href="../rt-control/"><strong>Real-Time Control (RT) Agent</strong></a></td>
-<td>Actuates controls on energy storage systems. Designed for adaptability and efficiency in controlling grid operations in real-time. Provides native implementations of the <a href="../mesa-modes/">MESA modes</a> (active power, reactive power, and emergency modes) and <a href="../novel-real-time-control/">novel PNNL-developed control functions</a> (Adaptive Moving Average Control, PID, rule-based) that run the Control Evaluation Engine algorithms on real hardware. User-defined algorithms can be implemented in Python or Julia. Code: <a href="https://github.com/der-control-modules/realtime-control-agent">realtime-control-agent</a>.</td>
+<td>Actuates controls on energy storage systems. Designed for adaptability and efficiency in controlling grid operations in real-time. Provides native implementations of the <a href="../mesa-modes/">MESA modes</a> (active power, reactive power, and emergency modes) and <a href="../novel-real-time-control/">novel PNNL-developed control functions</a> (Adaptive Moving Average Control, PID, rule-based) that run the Control Evaluation Engine algorithms on real hardware. User-defined algorithms can be implemented in Python or Julia. Code: <a href="https://github.com/interoperability-control-modules/realtime-control-agent">realtime-control-agent</a>.</td>
 </tr>
 <tr>
 <td><a href="../grid-signals/"><strong>Grid Signals Agent</strong></a></td>
-<td>Provides real-time and day-ahead data on CO₂ intensity, energy generation breakdown, and pricing information (time-of-use profiles, ComEd and PJM market prices). Configurable to handle TOU pricing data for adjusting grid operations in response to market fluctuations. Code: <a href="https://github.com/der-control-modules/grid-signals">grid-signals</a>.</td>
+<td>Provides real-time and day-ahead data on CO₂ intensity, energy generation breakdown, and pricing information (time-of-use profiles, ComEd and PJM market prices). Configurable to handle TOU pricing data for adjusting grid operations in response to market fluctuations. Code: <a href="https://github.com/interoperability-control-modules/grid-signals">grid-signals</a>.</td>
 </tr>
 <tr>
 <td><a href="../forecaster-agent/"><strong>Forecaster Agent</strong></a></td>
-<td>Utilizes historical data from the VOLTTRON historian, a weather forecast, and a thermal model to predict future energy load and outdoor temperature conditions. Helps utilities anticipate grid needs and optimize the scheduling and operation of energy storage systems. Code: <a href="https://github.com/der-control-modules/load-forecaster">load-forecaster</a>.</td>
+<td>Utilizes historical data from the VOLTTRON historian, a weather forecast, and a thermal model to predict future energy load and outdoor temperature conditions. Helps utilities anticipate grid needs and optimize the scheduling and operation of energy storage systems. Code: <a href="https://github.com/interoperability-control-modules/load-forecaster">load-forecaster</a>.</td>
 </tr>
 <tr>
 <td><a href="../es-control-integration/"><strong>ES Control Integration</strong></a></td>
-<td>The Control Evaluation Engine, a Julia application implementing the real-time control and scheduling algorithms and energy storage simulators, is the shared backend of the RT Control Agent and the web-based <a href="https://es-control.pnnl.gov/">ES-Control</a> tool, allowing direct comparison of simulated and real-world performance. Code: <a href="https://github.com/der-control-modules/ctrl-eval-engine">ctrl-eval-engine</a>.</td>
+<td>The Control Evaluation Engine, a Julia application implementing the real-time control and scheduling algorithms and energy storage simulators, is the shared backend of the RT Control Agent and the web-based <a href="https://es-control.pnnl.gov/">ES-Control</a> tool, allowing direct comparison of simulated and real-world performance. Code: <a href="https://github.com/interoperability-control-modules/ctrl-eval-engine">ctrl-eval-engine</a>.</td>
 </tr>
 </tbody>
 </table>

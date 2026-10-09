@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://interoperability-control-modules.github.io/interoperability-framework-control-module.github.io/interoperability-service/">
+      
       
         <link rel="prev" href="../interoperability-framework/">
       
@@ -23,7 +25,7 @@
     
     
       
-        <title>Interoperability Service - DER Control Modules Site</title>
+        <title>Interoperability Service - Interoperability Framework Control Module Site</title>
       
     
     
@@ -80,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DER Control Modules Site" class="md-header__button md-logo" aria-label="DER Control Modules Site" data-md-component="logo">
+    <a href=".." title="Interoperability Framework Control Module Site" class="md-header__button md-logo" aria-label="Interoperability Framework Control Module Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -94,7 +96,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DER Control Modules Site
+            Interoperability Framework Control Module Site
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -138,13 +140,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DER Control Modules Site" class="md-nav__button md-logo" aria-label="DER Control Modules Site" data-md-component="logo">
+    <a href=".." title="Interoperability Framework Control Module Site" class="md-nav__button md-logo" aria-label="Interoperability Framework Control Module Site" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    DER Control Modules Site
+    Interoperability Framework Control Module Site
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -1397,7 +1399,7 @@
 
 
 <h1 id="interoperability-service">Interoperability Service</h1>
-<p><a class="md-button" href="https://github.com/der-control-modules/interoperability-service">Code &amp; Installation Instructions</a></p>
+<p><a class="md-button" href="https://github.com/interoperability-control-modules/interoperability-service">Code &amp; Installation Instructions</a></p>
 <p>The Interoperability Service lets control applications address Distributed Energy Resource (DER) data by a stable,
 protocol-neutral identifier and receive it in whatever data format they understand. It provides templates for
 standards-based communication and reduces integration complexity:</p>
@@ -1769,7 +1771,7 @@ classes. Where the SunSpec scale factors are applied is a build-time choice, <co
 offline, and writes the whole configuration set: a registry for the <code>modbus</code> driver, a registry for the <code>fake</code>
 driver with the discovered values as starting values, the device configurations for both, the service configuration,
 and a <code>vctl</code> script that stores them. It requires the optional <code>discovery</code> extra, which installs pysunspec2.</p>
-<pre><code class="language-shell">pip install "interoperability-service[discovery] @ git+https://github.com/der-control-modules/interoperability-service"
+<pre><code class="language-shell">pip install "interoperability-service[discovery] @ git+https://github.com/interoperability-control-modules/interoperability-service"
 python -m interoperability.discovery.sunspec --host 10.0.0.21 --unit 1 --scaling driver --out build/
 python -m interoperability.discovery.sunspec --file device.json --out build/   # offline
 </code></pre>
@@ -2060,7 +2062,7 @@ while device drivers provide direct point-to-point communication with controller
 <p>Before installing, VOLTTRON should be installed and running and its virtual environment should be active.
 Information on how to install the VOLTTRON platform can be found
 <a href="https://github.com/eclipse-volttron/volttron-core">here</a>.</p>
-<pre><code class="language-shell">git clone https://github.com/der-control-modules/interoperability-service
+<pre><code class="language-shell">git clone https://github.com/interoperability-control-modules/interoperability-service
 vctl install ./interoperability-service --vip-identity platform.presentation --tag interop --start
 vctl config store platform.presentation config path/to/config.json
 vctl status
