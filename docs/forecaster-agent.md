@@ -3,7 +3,7 @@
 [Code & Installation Instructions](https://github.com/interoperability-control-modules/load-forecaster){ .md-button }
 
 The Forecaster Agent (Load Forecaster) is a VOLTTRON agent that produces short-term forecasts of building electrical
-and cooling load for use by the [Scheduler](scheduler.md) and other DER control applications. It utilizes historical
+and cooling load for use by the [Scheduler](scheduler.md) and other Interoperability Framework and Control Module applications. It utilizes historical
 data from the VOLTTRON historian, a weather forecast, and a thermal model to predict future energy load and outdoor
 temperature conditions, helping anticipate grid needs and optimize the scheduling and operation of energy storage
 systems. Forecasts are published on the VOLTTRON message bus, where they are consumed by the Scheduler and recorded

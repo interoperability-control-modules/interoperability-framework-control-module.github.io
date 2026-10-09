@@ -217,7 +217,7 @@ and a template for the components, one instance per identity:
 ```ini
 # /etc/systemd/system/interoperability-framework@.service
 [Unit]
-Description=DER control component %i
+Description=Interoperability Framework and Control Module component %i
 After=aems-server.service
 Requires=aems-server.service
 

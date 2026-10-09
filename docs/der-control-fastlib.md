@@ -2,8 +2,8 @@
 
 [Code & Installation Instructions](https://github.com/interoperability-control-modules/der-control-fastlib){ .md-button }
 
-der-control-fastlib is the lightweight runtime on which the Interoperability Framework and the DER control
-applications are deployed. It is the Interoperability Framework Control Module distribution of the Agent Energy Management System (AEMS)
+der-control-fastlib is the lightweight runtime on which the Interoperability Framework and Control Module
+applications are deployed. It is the Interoperability Framework and Control Module distribution of the Agent Energy Management System (AEMS)
 library, a fork of [aems-lib-fastapi](https://github.com/VOLTTRON/aems-lib-fastapi) from the VOLTTRON team. It
 replaces the full VOLTTRON platform with two small pieces:
 
