@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -1001,8 +1001,8 @@
 
 
 <h1 id="the-interoperability-framework">The Interoperability Framework</h1>
-<p>The Interoperability Framework, as shown in <a href="#interop-framework-services-diagram">Figure 1</a> and described in
-<a href="#interop-framework-components-table">Table 1</a>, provides a set of open-source services and VOLTTRON agents which
+<p>The Interoperability Framework, as shown in <a href="#interop-framework-services-diagram"></a> and described in
+<a href="#interop-framework-components-table"></a>, provides a set of open-source services and VOLTTRON agents which
 work together to enable seamless integration, control, and optimization of energy storage systems within a grid
 environment, improving operational efficiency and grid stability. All components communicate via a message bus,
 with the data flowing through the bus being stored in a database.
@@ -1012,17 +1012,26 @@ visualizing, and analyzing metrics and log data from the various components.</p>
 native data models and protocols of field devices (SunSpec Modbus, IEEE 1815.2/DNP3, IEEE 2030.5, IEC 61850,
 OpenFMB) into a common format consumed by the scheduler, real-time control, grid information, and forecaster
 components.</p>
-<p><figure id="interop-framework-services-diagram"><img alt="" src="../images/interop-framework-services.png"><figcaption>Figure 1: A suite of open-source services and agents for an interoperable framework. The Interoperability Service translates native device formats into the common format used by the control components. </figcaption></figure></p>
+<p>&lt;figure-caption identifier="Figure"id=interop-framework-services-diagram&gt;</p>
+<p>A suite of open-source services and agents for an interoperable framework. The Interoperability Service translates native device formats into the common format used by the control components. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/interop-framework-services.png"></p>
 <h2 id="architecture">Architecture</h2>
-<p>The framework is organized in layers, as shown in <a href="#interop-framework-layers">Figure 2</a>. Control applications (real-time
+<p>The framework is organized in layers, as shown in <a href="#interop-framework-layers"></a>. Control applications (real-time
 control, scheduling and dispatch, MESA modes, and user-defined controls) exchange commands and measurements with the
 Interoperability Framework. Within the framework, the Interoperability Service performs protocol translation and data
 mapping, the message bus (ZeroMQ or RabbitMQ) carries messages between components, and an interface layer of OpenFMB
 adapters, message bus adapters (MQTT, NATS), and device drivers connects to DER/ESS devices over their native
 protocols.</p>
-<p><figure id="interop-framework-layers"><img alt="" src="../images/interop-framework-layers.png"><figcaption>Figure 2: Layered architecture of the Interoperability Framework. </figcaption></figure></p>
-<table id="interop-framework-components-table">
-<caption style="caption-side:bottom">Table 1: Descriptions of framework components. </caption><thead>
+<p>&lt;figure-caption identifier="Figure"id=interop-framework-layers&gt;</p>
+<p>Layered architecture of the Interoperability Framework. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/interop-framework-layers.png"></p>
+<p>&lt;table-caption identifier="Table"id=interop-framework-components-table&gt;</p>
+<p>Descriptions of framework components. </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Component</th>
 <th>Description</th>
@@ -1153,10 +1162,10 @@ See <a href="../es-control-integration/">ES Control Integration</a>.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

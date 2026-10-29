@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -1418,12 +1418,15 @@ standards-based communication and reduces integration complexity:</p>
 registry</strong> that holds declarative field-mapping rules between data formats and finds a chain of transforms from the
 format a resource is published in to the format a consumer asked for. Consumers call one RPC, <code>resolve</code>, and get back
 the resource definition plus the transform needed to read it in their preferred format.</p>
-<p>As illustrated in <a href="#interop-service-mapping">Figure 1</a>, the service acts as a translator of communication interfaces and data
+<p>As illustrated in <a href="#interop-service-mapping"></a>, the service acts as a translator of communication interfaces and data
 models between control stations or outstations that implement different protocols.</p>
-<p><figure id="interop-service-mapping"><img alt="" src="../images/interop-service-mapping.png"><figcaption>Figure 1: The Interoperability Service translates communication interfaces and data models between IEC 61850 IEDs, SunSpec Modbus, IEEE 1815.2 (DNP3), IEEE 2030.5 (HTTP), and OpenFMB nodes on a message bus. </figcaption></figure></p>
+<p>&lt;figure-caption identifier="Figure"id=interop-service-mapping&gt;</p>
+<p>The Interoperability Service translates communication interfaces and data models between IEC 61850 IEDs, SunSpec Modbus, IEEE 1815.2 (DNP3), IEEE 2030.5 (HTTP), and OpenFMB nodes on a message bus. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/interop-service-mapping.png"></p>
 <h2 id="graph-and-transform-based-interoperability">Graph- and Transform-Based Interoperability</h2>
 <p>Rather than maintaining a direct mapping between every pair of protocols, the service maps each protocol-specific
-data model once onto a common data model, as shown in <a href="#interop-service-graph-transform">Figure 2</a>. Transforms between data
+data model once onto a common data model, as shown in <a href="#interop-service-graph-transform"></a>. Transforms between data
 formats are stored as edges in a directed graph keyed by format name. A conversion from one format to another is
 found as a path through this graph, so multi-stage transformations are composed automatically from reusable steps.
 For example, with the bundled IEEE 1815.2 to IEC 61850 and IEC 61850 to SunSpec transforms registered, a request for
@@ -1438,7 +1441,10 @@ described under <a href="#choosing-between-chains">Choosing between chains</a>. 
   OpenFMB, and other supported interfaces.</li>
 <li>Reduces protocol-specific custom integration.</li>
 </ul>
-<p><figure id="interop-service-graph-transform"><img alt="" src="../images/interop-service-graph-transform.png"><figcaption>Figure 2: Generalized graph- and transform-based interoperability. Source and target protocols are mapped once through a common data model, and multi-stage transformations are derived from the transform graph. </figcaption></figure></p>
+<p>&lt;figure-caption identifier="Figure"id=interop-service-graph-transform&gt;</p>
+<p>Generalized graph- and transform-based interoperability. Source and target protocols are mapped once through a common data model, and multi-stage transformations are derived from the transform graph. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/interop-service-graph-transform.png"></p>
 <h2 id="concepts">Concepts</h2>
 <h3 id="uniquely-addressable-identifiers">Uniquely Addressable Identifiers</h3>
 <p>A UAI is an ordered tuple of path segments, for example <code>("site1", "feeder2", "pv_inverter")</code>. Internally the
@@ -1630,8 +1636,11 @@ merged into the enclosing group at that position. This turns a list of curve poi
 }
 </code></pre>
 <h3 id="functions">Functions</h3>
-<table id="transform-functions">
-<caption style="caption-side:bottom">Table 1: Transform functions </caption><thead>
+<p>&lt;table-caption identifier="Table"id=transform-functions&gt;</p>
+<p>Transform functions </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Function</th>
 <th>Effect</th>
@@ -2119,10 +2128,10 @@ also changed. For deployment on the der-control-fastlib runtime, including as a 
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

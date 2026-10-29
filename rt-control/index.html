@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -1142,9 +1142,12 @@ The built-in control modes fall into two families, each described on its own pag
 <p>ESS classes abstract an energy storage system into a standard interface for use by control modes.
 The base class allows configuration of points on which state of charge and power
 can be monitored and (in the case of power) commanded.
-Currently two built-in ESS classes are shown in <a href="#storage-systems">Table 1</a></p>
-<table id="storage-systems">
-<caption style="caption-side:bottom">Table 1: Energy Storage Systems Implemented in the Real-Time Control Agent </caption><thead>
+Currently two built-in ESS classes are shown in <a href="#storage-systems"></a></p>
+<p>&lt;table-caption identifier="Table"id=storage-systems&gt;</p>
+<p>Energy Storage Systems Implemented in the Real-Time Control Agent </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Storage System</th>
 <th>Description</th>
@@ -1165,10 +1168,13 @@ Currently two built-in ESS classes are shown in <a href="#storage-systems">Table
 <p>UseCases are information services intended to collect data necessary to actualize some goal with the storage system.
 The UseCase ingests data from elsewhere in the VOLTTRON ecosystem, performs any necessary model calculations or
 transformations, and makes it available to control modes through properties. Eight built-in Use Cases are available,
-as shown in <a href="#use-cases">Table 2</a> (It should be noted that some modelled values are provided only as stubs.
+as shown in <a href="#use-cases"></a> (It should be noted that some modelled values are provided only as stubs.
 These may be implemented by users who subclass these with their own model.)</p>
-<table id="use-cases">
-<caption style="caption-side:bottom">Table 2: Use Cases Implemented in the Real-Time Control Agent </caption><thead>
+<p>&lt;table-caption identifier="Table"id=use-cases&gt;</p>
+<p>Use Cases Implemented in the Real-Time Control Agent </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Use Case</th>
 <th>Description</th>
@@ -1221,11 +1227,14 @@ These may be implemented by users who subclass these with their own model.)</p>
 <h3 id="mode">Mode</h3>
 <p>Control Modes contain the implementation of an algorithm for actuating the storage system.
 These may, optionally, ingest data from UseCases. They control the storage hardware through
-the interface of EnergyStorageSystem classes. The built-in modes are listed in <a href="#control-mode-families">Table 3</a> and
+the interface of EnergyStorageSystem classes. The built-in modes are listed in <a href="#control-mode-families"></a> and
 described in detail on the <a href="../mesa-modes/">MESA Modes</a> and <a href="../novel-real-time-control/">Novel Real-Time Control</a>
 pages.</p>
-<table id="control-mode-families">
-<caption style="caption-side:bottom">Table 3: Control mode families implemented in the Real-Time Control Agent </caption><thead>
+<p>&lt;table-caption identifier="Table"id=control-mode-families&gt;</p>
+<p>Control mode families implemented in the Real-Time Control Agent </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Family</th>
 <th>Modes</th>
@@ -1458,10 +1467,10 @@ vctl config store der.rtcontrol config path/to/config.json
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

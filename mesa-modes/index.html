@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -1087,12 +1087,15 @@ IEC 61850-7-420 DER information model, defines a set of standard control modes f
 The <a href="../rt-control/">Real-Time Control Agent</a> implements these modes natively in Python as subclasses of a common
 <code>MesaMode</code> base class, so that a storage system can provide standards-aligned grid services regardless of whether the
 device itself supports the mode. Modes are grouped into active power, reactive power, and emergency families, as
-shown in <a href="#mesa-active">Table 1</a>, <a href="#mesa-reactive">Table 2</a>, and <a href="#mesa-emergency">Table 3</a>.</p>
+shown in <a href="#mesa-active"></a>, <a href="#mesa-reactive"></a>, and <a href="#mesa-emergency"></a>.</p>
 <p>Several modes may be active at once. Limiting modes such as Active Power Limit constrain the commands produced by the
 other active modes, and the reactive power modes operate independently of the active power modes.</p>
 <h2 id="active-power-modes">Active power modes</h2>
-<table id="mesa-active">
-<caption style="caption-side:bottom">Table 1: MESA active power modes implemented in the Real-Time Control Agent </caption><thead>
+<p>&lt;table-caption identifier="Table"id=mesa-active&gt;</p>
+<p>MESA active power modes implemented in the Real-Time Control Agent </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Control Mode</th>
 <th>Description</th>
@@ -1130,8 +1133,11 @@ other active modes, and the reactive power modes operate independently of the ac
 </tbody>
 </table>
 <h2 id="reactive-power-modes">Reactive power modes</h2>
-<table id="mesa-reactive">
-<caption style="caption-side:bottom">Table 2: MESA reactive power modes implemented in the Real-Time Control Agent </caption><thead>
+<p>&lt;table-caption identifier="Table"id=mesa-reactive&gt;</p>
+<p>MESA reactive power modes implemented in the Real-Time Control Agent </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Control Mode</th>
 <th>Description</th>
@@ -1165,8 +1171,11 @@ other active modes, and the reactive power modes operate independently of the ac
 </tbody>
 </table>
 <h2 id="emergency-modes">Emergency modes</h2>
-<table id="mesa-emergency">
-<caption style="caption-side:bottom">Table 3: MESA emergency modes implemented in the Real-Time Control Agent </caption><thead>
+<p>&lt;table-caption identifier="Table"id=mesa-emergency&gt;</p>
+<p>MESA emergency modes implemented in the Real-Time Control Agent </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Control Mode</th>
 <th>Description</th>
@@ -1185,9 +1194,12 @@ other active modes, and the reactive power modes operate independently of the ac
 </table>
 <h2 id="mode-parameters">Mode parameters</h2>
 <p>Each mode is configured as an entry of the <code>modes</code> list in the Real-Time Control Agent configuration, with
-<code>class_name</code> set to the mode name and the parameters listed in <a href="#mesa-params">Table 4</a>.</p>
-<table id="mesa-params">
-<caption style="caption-side:bottom">Table 4: Configuration parameters of the MESA active power modes </caption><thead>
+<code>class_name</code> set to the mode name and the parameters listed in <a href="#mesa-params"></a>.</p>
+<p>&lt;table-caption identifier="Table"id=mesa-params&gt;</p>
+<p>Configuration parameters of the MESA active power modes </p>
+<p><table-caption-end></table-caption-end></p>
+<table>
+<thead>
 <tr>
 <th>Control Mode</th>
 <th>Parameters</th>
@@ -1296,10 +1308,10 @@ physical storage system.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

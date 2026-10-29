@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -1008,11 +1008,14 @@ scheduling and real-time control algorithms, define use cases, and analyze the p
 simulated energy storage system. Its backend, the <strong>Control Evaluation Engine</strong>, is also the backend of the
 <a href="../rt-control/">Real-Time Control Agent</a>, so an algorithm evaluated in ES-Control can be actuated on real hardware
 without re-implementation, and simulated performance can be compared directly against real-world operation, as shown
-in <a href="#ctrl-eval-engine-architecture">Figure 1</a>.</p>
-<p><figure id="ctrl-eval-engine-architecture"><img alt="" src="../images/ctrl-eval-engine-architecture.png"><figcaption>Figure 1: ES-Control and the Real-Time Control Agent share the Control Evaluation Engine as a common backend. </figcaption></figure></p>
+in <a href="#ctrl-eval-engine-architecture"></a>.</p>
+<p>&lt;figure-caption identifier="Figure"id=ctrl-eval-engine-architecture&gt;</p>
+<p>ES-Control and the Real-Time Control Agent share the Control Evaluation Engine as a common backend. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/ctrl-eval-engine-architecture.png"></p>
 <h2 id="control-evaluation-engine">Control Evaluation Engine</h2>
 <p>The Control Evaluation Engine is written primarily in Julia, with some Python components. It is summarized in
-<a href="#control-eval-engine">Figure 2</a> and consists of four modules:</p>
+<a href="#control-eval-engine"></a> and consists of four modules:</p>
 <table>
 <thead>
 <tr>
@@ -1039,7 +1042,10 @@ in <a href="#ctrl-eval-engine-architecture">Figure 1</a>.</p>
 </tr>
 </tbody>
 </table>
-<p><figure id="control-eval-engine"><img alt="" src="../images/control-eval-engine.png"><figcaption>Figure 2: The Control Evaluation Engine provides a shared backend for energy storage control. </figcaption></figure></p>
+<p>&lt;figure-caption identifier="Figure"id=control-eval-engine&gt;</p>
+<p>The Control Evaluation Engine provides a shared backend for energy storage control. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/control-eval-engine.png"></p>
 <h2 id="integration-with-the-real-time-control-agent">Integration with the Real-Time Control Agent</h2>
 <p>The Real-Time Control Agent calls the engine through PyJulia. Each <a href="../novel-real-time-control/">novel control mode</a>
 wraps an engine controller: on every control interval the agent converts the storage system state, use case data,
@@ -1121,10 +1127,10 @@ the repository.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

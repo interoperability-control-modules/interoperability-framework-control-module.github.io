@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
       
       
 
@@ -927,12 +927,15 @@ are further discussed in
 </tr>
 </tbody>
 </table>
-<p><figure id="mesa-charge-discharge"><img alt="" src="../image.png"><figcaption>Figure 1: MESA Charge/Discharge mode implementation, showing the Scheduler agent's 24-hour battery operation plan based on price signals to minimize costs and reduce peak power. </figcaption></figure></p>
+<p>&lt;figure-caption identifier="Figure"id=mesa-charge-discharge&gt;</p>
+<p>MESA Charge/Discharge mode implementation, showing the Scheduler agent's 24-hour battery operation plan based on price signals to minimize costs and reduce peak power. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../image.png"></p>
 <p>This implementation highlights how predictive modeling and real-time data enhance energy management and grid service delivery through VOLTTRON, demonstrating adaptive, efficient and cost-effective operations.</p>
 <h1 id="industry-engagement-and-ongoing-testing">Industry Engagement and Ongoing Testing</h1>
 <p>To validate the interoperability framework against real vendor equipment, PNNL is engaging key industry vendors,
 including SEL, Eaton, WAGO, Leidos, and Schneider Electric, and has established a dedicated interoperability test
-environment at PNNL. The test setup, shown in <a href="#testing-setup">Figure 3</a>, hosts the interoperability framework on a WAGO
+environment at PNNL. The test setup, shown in <a href="#testing-setup"></a>, hosts the interoperability framework on a WAGO
 processor and connects it to:</p>
 <ul>
 <li><strong>Device gateways with integrated end devices</strong>: Eaton grid edge devices (e.g., EdgeAP / Grid Edge Manager),
@@ -951,11 +954,17 @@ OpenFMB/MESA, and vendor-specific protocols via drivers. The goals of this effor
 <li>Conduct structured and repeatable interoperability testing across multiple use cases, using vendor feedback to
   refine data models, message mappings, framework capabilities, and real-time control workflows.</li>
 </ul>
-<p><figure id="industry-engagement"><img alt="" src="../images/industry-engagement.png"><figcaption>Figure 2: Path to a protocol-agnostic, interoperable DER ecosystem: vendor engagement, device integration, interoperability testing, and framework refinement. </figcaption></figure></p>
-<p><figure id="testing-setup"><img alt="" src="../images/testing-setup.png"><figcaption>Figure 3: Ongoing interoperability test setup at PNNL. Path 1 reaches end devices through vendor gateways (Eaton, SEL RTAC, WAGO controller); Path 2 connects the framework directly to simulated end devices. </figcaption></figure></p>
+<p>&lt;figure-caption identifier="Figure"id=industry-engagement&gt;</p>
+<p>Path to a protocol-agnostic, interoperable DER ecosystem: vendor engagement, device integration, interoperability testing, and framework refinement. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/industry-engagement.png"></p>
+<p>&lt;figure-caption identifier="Figure"id=testing-setup&gt;</p>
+<p>Ongoing interoperability test setup at PNNL. Path 1 reaches end devices through vendor gateways (Eaton, SEL RTAC, WAGO controller); Path 2 connects the framework directly to simulated end devices. </p>
+<p><figure-caption-end></figure-caption-end></p>
+<p><img alt="" src="../images/testing-setup.png"></p>
 <h2 id="simulated-end-devices">Simulated end devices</h2>
 <p><a class="md-button" href="https://github.com/interoperability-control-modules/simulated-end-devices">Code &amp; Installation Instructions</a></p>
-<p>The <code>simulated-end-devices</code> package provides the Path 2 devices of <a href="#testing-setup">Figure 3</a>: software models of DERs that
+<p>The <code>simulated-end-devices</code> package provides the Path 2 devices of <a href="#testing-setup"></a>: software models of DERs that
 expose the standard protocols the framework speaks, so that the Interoperability Service, drivers, and control
 applications can be exercised without hardware. One site configuration runs six devices behind a shared simulation
 clock and shared grid conditions:</p>
@@ -1084,10 +1093,10 @@ the Interoperability Service; it registers the three batteries as canonical reso
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>
