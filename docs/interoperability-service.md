@@ -427,12 +427,12 @@ vctl config store platform.presentation config path/to/config.json
 
 ## Consuming a resource from another agent
 
-`interoperability.resource.ResourceData` is a client-side helper used by the
+`icm.resources.ResourceData` (from the `icm-lib-resources` package) is a client-side helper used by the
 [Message Bus Adapter](message-bus-adapter.md) and available to any agent. It resolves a UAI through the service, compiles the returned transform, subscribes to the
 canonical publication topic, and delivers transformed payloads to a callback under the caller's own local topic:
 
 ```python
-from interoperability.resource import ResourceData
+from icm.resources import ResourceData
 
 def on_data(peer, sender, bus, topic, headers, message):
     ...  # message is already in the requested format
